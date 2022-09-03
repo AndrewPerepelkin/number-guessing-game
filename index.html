@@ -1,0 +1,28 @@
+Guess<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>УГАДАЙ ЧИСЛО</title>
+  </head>
+
+  <body>
+    <h1>Игра - УГАДАЙ ЧИСЛО</h1>
+
+    <p>Имеется выбранное случайное число от 1 до 100. Сможете ли Вы угадать используя всего 10 попыток? После очередной попытки будет появляться подсказка, сообщающая больше или меньше введенное Вами число, нежели загаданное.</p>
+
+    <div class="form">
+      <label for="guessField">Ввведите число: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
