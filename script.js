@@ -32,9 +32,9 @@ function checkGuess(e) {
       lastResult.textContent = 'Неправильно!';
       lastResult.style.backgroundColor = 'red';
       if(userGuess < randomNumber) {
-        lowOrHi.textContent = 'Введенное в последней попытке число было МЕНЬШЕ загаданного!';
-      } else if(userGuess > randomNumber) {
         lowOrHi.textContent = 'Введенное в последней попытке число было БОЛЬШЕ загаданного!';
+      } else if(userGuess > randomNumber) {
+        lowOrHi.textContent = 'Введенное в последней попытке число было МЕНЬШЕ загаданного!';
       }
     }
 
@@ -53,7 +53,7 @@ function setGameOver() {
   guessSubmit.setAttribute('disabled', true);
 
   resetButton = document.createElement('button');
-  resetButton.textContent = 'Start new game'
+  resetButton.textContent = 'Начать новую игру'
   document.body.append(resetButton);
 
   resetButton.addEventListener('click', resetGame);
